@@ -1,1 +1,11 @@
 * text=auto eol=lf
+
+# VOUCHERBASE | Parrish Lyon | PL-VOUCHERBASE-20260914
+# Classify real source files by their actual language. Never relabel Python as Go/Rust.
+*.go linguist-language=Go linguist-detectable=true
+*.rs linguist-language=Rust linguist-detectable=true
+*.py linguist-language=Python linguist-detectable=true
+
+# SQL is a data-language in Linguist and is otherwise omitted from the language chart.
+# These files implement the application's PostgreSQL/PostGIS schema and queries.
+*.sql linguist-language=SQL linguist-detectable=true

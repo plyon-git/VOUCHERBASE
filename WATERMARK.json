@@ -6,7 +6,7 @@
   "files": {
     ".dockerignore": "92f9b9bd8168066d62ffa6d68090a6779455de96922237008bb037064b546bd9",
     ".env.example": "9f7391406cff327a3a1506edfaaec71891ae1c5288936b7f46fca9e9dba7b357",
-    ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+    ".gitattributes": "cc13d8f79b47192926baaa4f452141c1ed53d0331564486afb33f882f0a3de6e",
     ".github/CODEOWNERS": "1f5fa68bd5bc020d50d7aed9f9e0706ed2be776622c06294119b8b8e7a5de72e",
     ".github/workflows/checks.yml": "40a62adef6c02d55c3434d9a5509383ad05e71a6d0608034e70060f2aedf1d22",
     ".gitignore": "fa538884c8c3654226017464d404d2b65653b00c177cdd38fc0716a00a912a5b",
