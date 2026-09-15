@@ -8,7 +8,7 @@ def entries(root):
  out={}
  for p in root.rglob("*"):
   rel=p.relative_to(root)
-  if any(x in EXCLUDE for x in rel.parts) or p.name in {"WATERMARK.json",".env","source-package.b64","bootstrap-source.yml","artifacts-ci.log"} or p.suffix==".pyc":continue
+  if any(x in EXCLUDE for x in rel.parts) or p.name in {"WATERMARK.json",".env","artifacts-ci.log"} or p.suffix==".pyc":continue
   if p.is_symlink():raise ValueError("Symlink forbidden: "+str(rel))
   if p.is_file():out[rel.as_posix()]=hashlib.sha256(p.read_bytes()).hexdigest()
  return dict(sorted(out.items()))

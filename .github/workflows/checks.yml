@@ -1,0 +1,49 @@
+# VOUCHERBASE | Parrish Lyon | PL-VOUCHERBASE-20260914
+name: VOUCHERBASE checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: voucherbase-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  full-stack:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with: {python-version: '3.12'}
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff
+        with: {go-version: '1.25.0', cache: false}
+      - name: Install pinned Rust toolchain
+        run: rustup toolchain install 1.90.0 --profile minimal --component rustfmt && rustup default 1.90.0
+      - name: Test source, calculations, PostGIS, API and browser
+        run: |
+          set -o pipefail
+          bash scripts/ci.sh 2>&1 | tee artifacts-ci.log
+      - name: Package verified source
+        if: success()
+        run: git archive --format=zip --prefix=VOUCHERBASE/ -o artifacts/VOUCHERBASE_Source.zip HEAD
+      - name: Collect test evidence
+        if: always()
+        run: |
+          mkdir -p artifacts
+          test ! -f artifacts-ci.log || cp artifacts-ci.log artifacts/ci.log
+          git rev-parse HEAD > artifacts/commit.txt
+          docker compose logs --no-color api bootstrap rust python > artifacts/service.log 2>&1 || true
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: voucherbase-validation-${{ github.sha }}
+          path: artifacts/
+          retention-days: 14
+      - name: Stop disposable test stack
+        if: always()
+        run: docker compose down -v || true
