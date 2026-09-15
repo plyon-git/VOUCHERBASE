@@ -1,0 +1,39 @@
+name: Prepare validation snapshot
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/prepare-validation.yml']
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Resolve pinned browser testing dependencies
+        run: |
+          cd tests
+          npm install --package-lock-only --ignore-scripts --save-exact playwright@1.63.0
+          npm audit --audit-level=high
+      - name: Package tracked source for review
+        run: |
+          mkdir -p /tmp/voucherbase-review
+          python3 - <<'PY'
+          import pathlib, subprocess, zipfile
+          paths = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
+          with zipfile.ZipFile('/tmp/voucherbase-review/VOUCHERBASE_review.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
+              for name in paths:
+                  if not name:
+                      continue
+                  path = pathlib.Path(name)
+                  if path.is_file() and not path.is_symlink():
+                      archive.write(path, 'VOUCHERBASE/' + name)
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: voucherbase-source-review
+          path: /tmp/voucherbase-review/
+          retention-days: 3
