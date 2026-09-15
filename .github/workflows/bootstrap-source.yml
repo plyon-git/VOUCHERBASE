@@ -1,0 +1,77 @@
+name: Publish and validate VOUCHERBASE
+on:
+  push:
+    branches: [main]
+    paths: ['.delivery/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish-and-test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with: {python-version: '3.12'}
+      - name: Restore exact prepared source package
+        run: |
+          python - <<'PY'
+          import base64,hashlib,json,lzma,shutil
+          from pathlib import Path,PurePosixPath
+          parts=sorted(Path('.delivery').glob('part-*.b64'))
+          assert len(parts)==8, 'Incomplete source transport'
+          raw=base64.b64decode(''.join(p.read_text() for p in parts),validate=True)
+          assert len(raw)==66220
+          assert hashlib.sha256(raw).hexdigest()=='8bc2ca90fcb45641e893d98730e852b48cec2475021d4a26f66b15a10c440ee2'
+          files=json.loads(lzma.decompress(raw))
+          assert isinstance(files,dict) and len(files)==67
+          for name,content in files.items():
+              p=PurePosixPath(name)
+              assert isinstance(content,str) and not p.is_absolute() and '..' not in p.parts and '.git' not in p.parts
+              dst=Path(name);dst.parent.mkdir(parents=True,exist_ok=True);dst.write_text(content,encoding='utf-8',newline='')
+          shutil.rmtree('.delivery')
+          print('Restored 67 source files; transport SHA-256 matched.')
+          PY
+          python scripts/integrity.py
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff
+        with: {go-version: '1.25.0', cache: false}
+      - name: Install Rust toolchain
+        run: rustup toolchain install 1.90.0 --profile minimal --component rustfmt && rustup default 1.90.0
+      - name: Resolve lockfiles, format Rust, and finalize initial source baseline
+        run: |
+          (cd apps/api-go && go mod tidy)
+          cargo generate-lockfile
+          cargo fmt --all
+          (cd tests && npm install --package-lock-only --ignore-scripts)
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('compose.yaml');s=p.read_text();s=s.replace('  pipeline:\n    profiles: [tools]','  pipeline:\n    user: "${VB_LOCAL_UID:-1000}:${VB_LOCAL_GID:-1000}"\n    profiles: [tools]');p.write_text(s)
+          p=Path('scripts/configure.py');s=p.read_text();s=s.replace('    fd=os.open(path,','    content += f"VB_LOCAL_UID={os.getuid()}\\nVB_LOCAL_GID={os.getgid()}\\n"\n    fd=os.open(path,');p.write_text(s)
+          PY
+          python scripts/integrity.py --write
+          python scripts/integrity.py
+      - name: Publish ordinary source files to main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- . ':!.github/workflows'
+          git commit -m 'Publish complete VOUCHERBASE application, dependency locks and Parrish Lyon watermark'
+          git push origin HEAD:main
+      - name: Validate all four languages, real PostGIS and browser workflows
+        run: |
+          set -o pipefail
+          bash scripts/ci.sh 2>&1 | tee artifacts-ci.log
+      - name: Collect validation evidence
+        if: always()
+        run: |
+          mkdir -p artifacts
+          test ! -f artifacts-ci.log || cp artifacts-ci.log artifacts/ci.log
+          docker compose logs --no-color api bootstrap rust python > artifacts/service.log 2>&1 || true
+      - name: Upload validation evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with: {name: voucherbase-initial-validation, path: artifacts/, retention-days: 7}
+      - name: Stop disposable stack
+        if: always()
+        run: docker compose down -v || true
