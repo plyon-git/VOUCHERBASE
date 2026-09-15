@@ -1,0 +1,41 @@
+{
+  "property_id": "REPLACE_WITH_PROPERTY_UUID",
+  "effective_on": "2026-09-14",
+  "knowledge_at": "",
+  "authority_id": "DHA",
+  "authority_confirmed": true,
+  "voucher_bedrooms": null,
+  "utilities": {
+    "complete": true,
+    "items": [
+      "heat_gas",
+      "other_electric",
+      "water_sewer"
+    ]
+  },
+  "proposed_rent_cents": 240000,
+  "comparable_kind": "executed",
+  "benchmark_entity": "",
+  "underwriting": {
+    "purchase_cents": 30000000,
+    "renovation_cents": 1500000,
+    "closing_cents": 600000,
+    "loan_cents": 22500000,
+    "annual_interest_bps": 650,
+    "term_months": 360,
+    "vacancy_bps": 500,
+    "management_bps": 800,
+    "maintenance_bps": 500,
+    "annual_tax_cents": 300000,
+    "annual_insurance_cents": 180000,
+    "monthly_hoa_cents": 0,
+    "monthly_owner_utilities_cents": 0,
+    "monthly_capex_reserve_cents": 15000
+  },
+  "scenarios": [
+    {
+      "name": "Vacancy 10%",
+      "vacancy_bps": 1000
+    }
+  ]
+}

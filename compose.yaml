@@ -1,0 +1,97 @@
+name: voucherbase
+x-python-env: &python-env
+  PYTHONPATH: /workspace/python
+  PGHOST: db
+  PGPORT: 5432
+  PGDATABASE: voucherbase
+  VB_INTERNAL_TOKEN: ${VB_INTERNAL_TOKEN:?Run python3 scripts/configure.py}
+  VB_DEMO: ${VB_DEMO:-1}
+  VB_LIVE_PROVIDERS: ${VB_LIVE_PROVIDERS:-0}
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    platform: linux/amd64
+    environment:
+      POSTGRES_DB: voucherbase
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${VB_DB_ADMIN_PASSWORD:?Run scripts/configure.py}
+    volumes: ["database:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U postgres -d voucherbase"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+  bootstrap:
+    build: {context: ., dockerfile: docker/python.Dockerfile}
+    environment:
+      <<: *python-env
+      PGUSER: postgres
+      PGPASSWORD: ${VB_DB_ADMIN_PASSWORD}
+      VB_DB_APP_PASSWORD: ${VB_DB_APP_PASSWORD}
+      VB_DB_INGEST_PASSWORD: ${VB_DB_INGEST_PASSWORD}
+      VB_API_TOKEN: ${VB_API_TOKEN}
+    command: ["python","-m","voucherbase.cli","bootstrap"]
+    depends_on: {db: {condition: service_healthy}}
+  rust:
+    build: {context: ., dockerfile: docker/rust.Dockerfile}
+    environment: {VB_INTERNAL_TOKEN: "${VB_INTERNAL_TOKEN}"}
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  python:
+    build: {context: ., dockerfile: docker/python.Dockerfile}
+    environment: *python-env
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  api:
+    build: {context: ., dockerfile: docker/api.Dockerfile}
+    environment:
+      PGHOST: db
+      PGPORT: 5432
+      PGDATABASE: voucherbase
+      PGUSER: vb_app
+      PGPASSWORD: ${VB_DB_APP_PASSWORD}
+      PGSSLMODE: disable
+      VB_INTERNAL_TOKEN: ${VB_INTERNAL_TOKEN}
+      VB_RUST_URL: http://rust:8081
+      VB_PYTHON_URL: http://python:8082
+      VB_PUBLIC_ORIGIN: ${VB_PUBLIC_ORIGIN:-http://localhost:8080}
+      VB_DEMO: ${VB_DEMO:-1}
+    ports: ["127.0.0.1:8080:8080"]
+    depends_on:
+      bootstrap: {condition: service_completed_successfully}
+      rust: {condition: service_started}
+      python: {condition: service_started}
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  pipeline:
+    user: "${VB_LOCAL_UID:-1000}:${VB_LOCAL_GID:-1000}"
+    profiles: [tools]
+    build: {context: ., dockerfile: docker/python.Dockerfile}
+    environment:
+      <<: *python-env
+      PGUSER: vb_ingest
+      PGPASSWORD: ${VB_DB_INGEST_PASSWORD}
+      HUD_API_TOKEN: ${HUD_API_TOKEN:-}
+    volumes: ["./imports:/imports"]
+    command: ["python","-m","voucherbase.cli","--help"]
+    depends_on: {db: {condition: service_healthy}}
+  admin:
+    profiles: [tools]
+    build: {context: ., dockerfile: docker/python.Dockerfile}
+    environment:
+      <<: *python-env
+      PGUSER: postgres
+      PGPASSWORD: ${VB_DB_ADMIN_PASSWORD}
+      VB_DB_APP_PASSWORD: ${VB_DB_APP_PASSWORD}
+    command: ["python","-m","voucherbase.cli","--help"]
+    depends_on: {db: {condition: service_healthy}}
+volumes:
+  database:

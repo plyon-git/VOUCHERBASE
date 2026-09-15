@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "address": "102 Example Lane",
+      "city": "Denver",
+      "state": "CO",
+      "zip": "80204",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1500,
+      "structure": "detached",
+      "condition": "good",
+      "amenities": [
+        "parking",
+        "laundry"
+      ],
+      "latitude": 39.74,
+      "longitude": -105.01,
+      "geocode_status": "synthetic",
+      "is_demo": true,
+      "external_id": "my-demo-comp-001",
+      "source_url": "https://example.invalid/synthetic",
+      "kind": "synthetic",
+      "observed_on": "2026-08-01",
+      "rent_cents": 240000,
+      "property_ref": "my-demo-property-001"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+**/__pycache__
+**/.pytest_cache
+**/target
+**/node_modules
+**/.env
+.git
+artifacts
+release
+*.zip

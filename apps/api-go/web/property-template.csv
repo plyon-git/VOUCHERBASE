@@ -1,0 +1,2 @@
+address,city,state,zip,bedrooms,bathrooms,sqft,structure,condition,latitude,longitude,is_demo
+101 Example Lane,Denver,CO,80204,3,2,1500,detached,good,39.738,-105.011,true

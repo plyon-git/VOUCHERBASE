@@ -1,0 +1,2258 @@
+{
+  "external_key": "demo-schedules-v1",
+  "title": "SYNTHETIC demonstration authority and standards",
+  "url": "https://example.invalid/voucherbase/demo",
+  "category": "synthetic",
+  "authority": {
+    "id": "DEMO",
+    "name": "Example Housing Authority (synthetic)",
+    "state": "CO",
+    "is_demo": true
+  },
+  "valid_from": "2026-01-01",
+  "valid_until": null,
+  "document_sha256": null,
+  "notes": "Synthetic demonstration. Not an official PHA, geography or payment standard.",
+  "rows": [
+    {
+      "kind": "payment_standard",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "any",
+      "utility_code": "none",
+      "value_cents": 100000
+    },
+    {
+      "kind": "payment_standard",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "any",
+      "utility_code": "none",
+      "value_cents": 140000
+    },
+    {
+      "kind": "payment_standard",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "any",
+      "utility_code": "none",
+      "value_cents": 180000
+    },
+    {
+      "kind": "payment_standard",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "any",
+      "utility_code": "none",
+      "value_cents": 220000
+    },
+    {
+      "kind": "payment_standard",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "any",
+      "utility_code": "none",
+      "value_cents": 260000
+    },
+    {
+      "kind": "payment_standard",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "any",
+      "utility_code": "none",
+      "value_cents": 300000
+    },
+    {
+      "kind": "payment_standard",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "any",
+      "utility_code": "none",
+      "value_cents": 340000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "detached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "attached",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "heat_pump",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "hot_water_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_gas",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "range_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "other_electric",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_sewer",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "water_septic",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "trash",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_range",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 0,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 1,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 2,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 3,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 4,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 5,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    },
+    {
+      "kind": "utility",
+      "bedrooms": 6,
+      "geo_key": "*",
+      "structure": "high_rise",
+      "utility_code": "tenant_refrigerator",
+      "value_cents": 5000
+    }
+  ]
+}
